@@ -1,127 +1,64 @@
-html, body {
-    height: 100%;
-    width: 100%; 
-}
+<!DOCTYPE html>
+<html lang="en-US">
 
-* {font-family: Verdana, Helvetica, serif;}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Personal Project</title>
+    <link href="personalPage2Style.css" rel="stylesheet" type="text/css">
+</head>
 
-body {
-    color: black;
-    background-color: silver;
-}
+<body>
+  <header class="navbar">
+    <div id="MB"> MB </div>
+    <h2 id="Name">Seahawks</h2>
+    <a class="back" href="personalProject.html">Back</a>
+  </header>
+  
+  <script src="script.js"></script>
+ <h2>Seahawks Players</h2>
+  <div class="Players">
+    <table>
+      <tr id="firstrow">
+        <th>Standing</th>
+        <th>Team</th>
+        <th>Record</th>
+      </tr>
+      <tr>
+        <th>1</th>
+        <th>
+          <img src="https://s.yimg.com/cv/apiv2/default/nfl/20190724/500x500/2019_SF_wbg.png" alt="49ers Logo">
+          49ers
+        </th>
+        <th>2-2</th>
+      </tr>
+      <tr>
+        <th>2</th>
+        <th>
+          <img src="https://i.guim.co.uk/img/media/c15695433fb1871e73851c41ad963f3b7c562767/0_164_2000_1200/master/2000.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=7b0b7cbe882fa6e6cb783536ef8875d0" alt="Rams Logo">
+          Rams
+        </th>
+        <th>2-2</th>
+      </tr>
+      <tr>
+        <th>3</th>
+        <th>
+          <img src="https://www.sportscasting.com/wp-content/uploads/2022/03/Arizona-Cardinals-logo.jpg" alt="Cardinals Logo">
+          Cardinals
+        </th>
+        <th>2-2</th>
+      </tr>
+      <tr>
+        <th>4</th>
+        <th>
+          <img src="https://yt3.ggpht.com/ytc/AMLnZu_bwxGniwg2007fDim1tsnG7u-ioCDCGT6OYacl7do=s900-c-k-c0x00ffffff-no-rj" alt="Seahawks Logo">
+          Seahawks
+        </th>
+        <th>2-2</th>
+      </tr>
+    </table>
+    <p> With a win over the Seahawks and Rams the 49ers are squaely in the lead but the rest of the NFC west is up for grabs with everyone at 2-2.</p>
+  </div>
+</body>
 
-.navbar {
-  height: 2em;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1em;
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-  background-color: darkblue;
-  padding: 1px;
-  margin: 1px;
-}
-
-.left {
-  gap: .5em;
-  align-items: center;
-  display: flex;
-  flex-direction:  row;
-}
-
-.navbar a {
-  float: left;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 150%;
-}
-
-.navbar h2 {
-  font-family: Verdana, Helvetica, serif;
-  float: left;
-  color: limegreen;
-  text-align: center;
-  text-decoration: none;
-  font-size: 150%;
-}
-
-.navbar b {
-  float: left;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 150%;
-}
-
-.navbar #MB {
-  color: gold;
-  text-align: center;
-  text-decoration: none;
-  font-size: 100%;
-}
-
-.navbar a:hover {
-  color: darkblue;
-  background-color: lightgoldenrodyellow;
-}
-
-.navbar a.active {
-  color: gold;
-  background-color: blue;
-}
-
-a:hover{color: magenta}
-
-ol {
-  list-style-type: square;
-}
-
-#MB {
-  font-family: Lucida Handwriting, monospace, serif;
-  color: gold;
-  text-align: center;
-  border: .2em solid white;
-  width: 4% em;
-  height: 4% em;
-  padding: .05em;
-  margin: 1px;
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
-}
-
-
-table{
-  border-collapse: collapse;
-  border: 3px solid black;
-  margin-left:auto; 
-  margin-right:auto;
-}
-
-th {
-  border: 3px solid black;
-}
-
-table tr td {
-  border: 3px solid black;
-}
-
-h2 {
-  text-align: center;
-}
-
-p {
-  text-align: center;
-}
-
-th img {
-  display: block;
-  width: auto;
-  height: 100px;
-  margin-left: auto;
-  margin-right: auto;
-}
+</html>
