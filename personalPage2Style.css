@@ -1,36 +1,97 @@
-<!DOCTYPE html>
-<html>
+html, body {
+    height: 100%;
+    width: 100%; 
+}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Personal Project</title>
-    <link href="personalPage2Style.css" rel="stylesheet" type="text/css" />
-</head>
+* {font-family: Verdana, Helvetica, serif;}
 
-<body>
-  <header class="navbar">
-    <div id="MB"> MB </div>
-    <h2 id="Name">Michael Bodge</h2>
-    <a class="back" href="personalProject.html">Back</a>
-  </header>
-  
-  <script src="script.js"></script>
-  <p>GET PRANKED</p>
-  <p>This is where you can pick from all my projects so far.</p>
-  <div class="Links">
-    <ol class="projects">
-      <h3>Projects: </h3>
-      <li>
-        <a class="page1" href="page1.html">Page 1</a>
-      </li>
-      <li>
-        <a class="page3" href="page3.html">Page 3</a>
-      </li>
-    </ol>
-  </div>
-  
-    
-</body>
+body {
+    color: black;
+    background-color: skyblue;
+}
 
-</html>
+.navbar {
+  height: 2em;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background-color: darkblue;
+  padding: 1px;
+  margin: 1px;
+}
+
+.left {
+  gap: .5em;
+  align-items: center;
+  display: flex;
+  flex-direction:  row;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+.navbar h2 {
+  font-family: Verdana, Helvetica, serif;
+  float: left;
+  color: gold;
+  text-align: center;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+.navbar b {
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+.navbar #MB {
+  color: gold;
+  text-align: center;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.navbar a:hover {
+  color: darkblue;
+  background-color: lightgoldenrodyellow;
+}
+
+.navbar a.active {
+  color: gold;
+  background-color: blue;
+}
+
+a:hover{color: magenta}
+
+ol {
+  list-style-type: square;
+}
+
+#MB {
+  font-family: Lucida Handwriting, monospace, serif;
+  color: gold;
+  text-align: center;
+  border: .2em solid white;
+  width: 4% em;
+  height: 4% em;
+  padding: .05em;
+  margin: 1px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+
