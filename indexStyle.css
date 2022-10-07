@@ -94,4 +94,14 @@ ol {
   flex-direction: column;
 }
 
+#self {
+  display: block;
+  width: auto;
+  height: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.main {
+  text-align: center;
+}
