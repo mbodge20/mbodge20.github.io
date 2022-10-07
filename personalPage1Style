@@ -1,0 +1,97 @@
+html, body {
+    height: 100%;
+    width: 100%; 
+}
+
+* {font-family: Verdana, Helvetica, serif;}
+
+body {
+    color: black;
+    background-color: skyblue;
+}
+
+.navbar {
+  height: 2em;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background-color: darkblue;
+  padding: 1px;
+  margin: 1px;
+}
+
+.left {
+  gap: .5em;
+  align-items: center;
+  display: flex;
+  flex-direction:  row;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+.navbar h2 {
+  font-family: Verdana, Helvetica, serif;
+  float: left;
+  color: gold;
+  text-align: center;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+.navbar b {
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+.navbar #MB {
+  color: gold;
+  text-align: center;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.navbar a:hover {
+  color: darkblue;
+  background-color: lightgoldenrodyellow;
+}
+
+.navbar a.active {
+  color: gold;
+  background-color: blue;
+}
+
+a:hover{color: magenta}
+
+ol {
+  list-style-type: square;
+}
+
+#MB {
+  font-family: Lucida Handwriting, monospace, serif;
+  color: gold;
+  text-align: center;
+  border: .2em solid white;
+  width: 4% em;
+  height: 4% em;
+  padding: .05em;
+  margin: 1px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+
