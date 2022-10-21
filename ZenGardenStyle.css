@@ -7,7 +7,6 @@
 
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
-
 /* basic elements */
 html {
 	margin: 0;
@@ -21,7 +20,7 @@ body {
 	font: 100%;
   font-family: 'Optima', 'Candara', 'Verdana', 'sans-serif';
 	line-height: 1.88889;
-	color: whitesmoke;
+	color: aliceblue;
 	margin: 0; 
 	padding: 0;
 	}
@@ -36,19 +35,20 @@ h3 {
   font-family: 'Optima', 'Candara', 'Verdana', 'sans-serif';
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
-	color: blanchedalmond;
+	color: wheat;
+  text-shadow: -2px 2px 2px darkseagreen, -4px 4px 5px seagreen;
 	}
 
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: blanchedalmond;
+	color:  wheat;
 	}
 
 a:visited { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: paleturquoise;
+	color: darkslateblue;
 	}
 
 a:hover, a:focus, a:active { 
@@ -60,10 +60,8 @@ abbr {
 	border-bottom: none;
 	}
 
-
 /* specific divs */
 .page-wrapper { 
-	background: url("https://media2.giphy.com/media/f5kbBIpWM1h5k4v64z/giphy.gif?cid=790b76118fa3322ac4e1ae415bbadcea94c623a3ea0dccf9&rid=giphy.gif&ct=g") no-repeat center right;  
   background-size: 200px;
 	padding: 0 175px 0 110px;  
 	margin: 0; 
@@ -76,29 +74,32 @@ abbr {
 	}
 
 header h1 { 
-	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThbo0XS7FZgZbx28d02QUpuvLk2m8GgCoPjA&usqp=CAU") no-repeat top left;
-	margin-top: 2px;
+	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThbo0XS7FZgZbx28d02QUpuvLk2m8GgCoPjA&usqp=CAU") no-repeat center left;
+	top: 0;
+  left: 0;
 	display: block;
-	width: auto;
-	height: 100px;
+	height: 60px;
   font-style: italic;
   color: blanchedalmond;
-  font-size: 35px;
+  font-size: 40px;
   text-shadow: -4px 4px 5px darkseagreen, -10px 10px 10px seagreen;
-	text-indent: auto;
-  padding: 5%;
+  padding: 10px;
+  padding-bottom: 20px;
 	white-space: nowrap;
+  float: left;
 	overflow: hidden;
 	}
 
 header h2 { 
 	background:  darkslategray url("https://media2.giphy.com/media/f5kbBIpWM1h5k4v64z/giphy.gif?cid=790b76118fa3322ac4e1ae415bbadcea94c623a3ea0dccf9&rid=giphy.gif&ct=g") center center; 
-	margin-top: 0px; 
-	margin-bottom: 20px; 
   font-size: 30px;
-  height:200px;
+  text-shadow: -2px -1px 5px black;
+  text-align: center;
+  padding-top: 70px;
+  height:150px;
+  width:400px;
 	float: right;
-  color: blanchedalmond;
+  color: aliceblue;
 	white-space: nowrap;
 	overflow: hidden;
 	}
@@ -109,10 +110,22 @@ header {
 }
 
 .summary {
+  background: wheat;
+  color: darkslategray;
+  font-size: 20px;
+  padding: 20px;
 	clear: both; 
 	margin: 20px 20px 20px 10px; 
 	width: 160px; 
 	float: left;
+	}
+
+.summary a {
+  color: green;
+	}
+
+.summary a:hover {
+  color: yellowgreen;
 	}
 
 .summary p {
@@ -122,11 +135,15 @@ header {
 	}
 
 .preamble {
+  background: rgba(47, 79, 79, .5);
+  padding: 20px;
 	clear: right; 
 	padding: 0px 10px 0 10px;
 	}
 
 .supporting {	
+  background: rgba(47, 79, 79, .5);
+  padding: 20px;
 	padding-left: 10px; 
 	margin-bottom: 40px;
 	}
@@ -138,22 +155,34 @@ footer {
 	width: 100%;
 	height: 50px;
 	text-align: center; 
-  color: darkslategray;
+  color: black
 	}
 
 footer a:link, footer a:visited { 
 	margin-right: 20px;
+  color: black;
 	}
+
+footer a {
+  font-size: 25px;
+  color: black;
+}
+
+footer a:hover {
+  font-size: 25px;
+  color: yellowgreen;
+}
 
 .sidebar {
   background:  darkslategray url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHYsNIBW4jElqzuMesAC94XkxZr1oXDHytMA&usqp=CAU") no-repeat top center;
   background-size: contain;
-  margin: 5px;
-	margin-left: 600px; 
-	position: fixed; 
-	top: 0; 
+  margin: 10px;
+	margin-left: 600px;
+	position: fixed;
+	top: 0;
 	right: 0;
   font-family: 'Optima', 'Candara', 'Verdana', 'sans-serif';
+  font-size: 14px;
 	}
 
 .sidebar .wrapper { 
@@ -203,9 +232,14 @@ footer a:link, footer a:visited {
 	}
 
 .sidebar li a:link {
-	color: wheat;
+	color: aliceblue;
+	}
+
+.sidebar li a:hover { 
+	text-decoration: underline; 
+	color: greenyellow;
 	}
 
 .sidebar li a:visited {
-	color: blanchedalmond;
+	color: green;
 	}
