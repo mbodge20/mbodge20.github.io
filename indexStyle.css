@@ -7,31 +7,31 @@ html, body {
 
 body {
     color: black;
-    background-color: skyblue;
+    background-color: paleturquoise;
 }
 
 .navbar {
-  height: 2em;
+  height: 3%;
   justify-content: space-between;
   align-items: center;
-  gap: 1em;
+  gap: 5%;
   display: flex;
   flex-direction: row;
   overflow: hidden;
   background-color: darkblue;
-  padding: 1px;
-  margin: 1px;
+  padding:1%;
+  margin: 1%;
 }
 
 .left {
-  gap: .5em;
+  gap: 5%;
   align-items: center;
   display: flex;
   flex-direction:  row;
 }
 
 .navbar a {
-  float: left;
+  float: center;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -40,7 +40,7 @@ body {
 
 .navbar h2 {
   font-family: Verdana, Helvetica, serif;
-  float: left;
+  float: center;
   color: gold;
   text-align: center;
   text-decoration: none;
@@ -48,7 +48,7 @@ body {
 }
 
 .navbar b {
-  float: left;
+  float: center;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -97,11 +97,22 @@ ol {
 #self {
   display: block;
   width: auto;
-  height: 25%;
+  height: 30%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .main {
   text-align: center;
+}
+
+.Links {
+  text-align: left;
+  text-overflow: clip;
+  font-size: 120%;
+  background: beige;
+  color: darkblue;
+  list-style-position: inside;
+  padding: 2%;
+  margin: 10%;
 }
