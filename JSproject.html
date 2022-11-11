@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memory Game in JavaScript</title>
+      
+         <link href="JSproject.css" rel="stylesheet" type="text/css">
+      
+        <script src="JSproject.js" defer></script>
+    </head>
+    <body>
+      <header class="navbar">
+        <div id="MB"> MB </div>
+        <h2 id="Name">JS Project</h2>
+        <div>
+        <a class="back" href="index.html">Back</a>
+        <b> </b>
+        </div>
+      </header>
+      
+      <div class="game">
+          <div class="controls">
+              <button id='button'>Start</button>
+              <div class="stats">
+                  <div class="moves">0 moves</div>
+                  <div class="timer">time: 0 sec</div>
+              </div>
+          </div>
+          <div class="board-container">
+              <div class="board" data-dimension="4"></div>
+              <div class="win">You won!</div>
+          </div>
+      </div>
+    </body>
+</html>
