@@ -1,4 +1,4 @@
-// Credit to flowforfrank for game idea and framework of JS
+// Credit to flowforfrank for game idea and framework of JS https://github.com/flowforfrank/memory-game/blob/master/assets/game.js
 
 const selectors = {
     boardContainer: document.querySelector('.board-container'),
