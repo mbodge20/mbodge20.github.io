@@ -168,18 +168,6 @@ function buildPerson(api) {
 	catch (error) {
 		console.log(error);
 	}
-	fixPerson()
-}
-
-function fixPerson() {
-
-	let homeworld = document.getElementById('homeworld').innerHTML;
-	console.log("homeworld")
-	console.log(homeworld)
-	let home = loadName(homeworld)
-	console.log(home)
-	document.getElementById("homeworld").innerHTML = "<p>"+home+"</p>";
-
 }
 
 function buildPlanet(api) {
