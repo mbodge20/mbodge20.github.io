@@ -1,0 +1,168 @@
+html, body {
+    height: 100%;
+    width: 100%; 
+}
+
+* {
+	font-family: 'Death Star', sans-serif;
+	font-size: 110%;
+	font-stretch: expanded;
+	letter-spacing: 2px;
+	}
+
+title {
+  padding: 20px;
+  margin: 20px;
+  color: black;
+  position: left center;
+}
+
+body {
+	color: goldenrod;
+	background-color: black;
+	background-image: url("https://wallpaper.dog/large/5482636.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar {
+  height: 3%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background-color: black;
+  padding:1%;
+  margin: 1%;
+}
+
+
+.navbar a {
+  float: left;
+  color: goldenrod;
+  text-align: center;
+  text-decoration: none;
+  font-size: 150%;
+}
+
+.navbar h2 {
+  float: left;
+  color: goldenrod;
+  text-align: center;
+  text-decoration: none;
+  font-size: 180%;
+}
+
+.navbar b {
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar #MB {
+  color: goldenrod;
+  text-align: center;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+.navbar a.active {
+  color: goldenrod;
+  background-color: white;
+}
+
+#MB {
+  color: goldenrod;
+  text-align: center;
+  border: .2em solid white;
+  width: 4% em;
+  height: 4% em;
+  padding: .05em;
+  margin: 1px;
+}
+
+button {
+	background: black;
+	color: goldenrod;
+	border-radius: 5px;
+	padding: 5px 10px;
+	border: 0;
+	cursor: pointer;
+	font-size: 28pt;
+	margin: 20px;
+}
+
+select {
+	background: black;
+	color: goldenrod;
+	border-radius: 5px;
+	padding: 10px 10px;
+	border: 0;
+	font-size: 28pt;
+	margin: 40px;
+}
+
+.selector {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info{
+	background-color: rgba(5,5,5,.5);
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.info h1 {
+	color: white;
+	border-bottom: 10px white solid;
+	font-size: 60pt;
+	text-align: center;
+	font-stretch: expanded;
+	letter-spacing: 10px;
+}
+
+.info h2 {
+	color: goldenrod;
+	border-bottom: 5px goldenrod solid;
+	font-size: 30pt;
+	text-align: center;
+	font-stretch: expanded;
+	letter-spacing: 5px;
+}
+
+.info p {
+	color: white;
+	font-size: 25pt;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+.info ul {
+	color: white;
+	font-size: 25pt;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	text-align: center;
+	letter-spacing: 5px;
+}
+
+#loading {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	text-align: center;
+}
