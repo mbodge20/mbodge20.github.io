@@ -1,4 +1,4 @@
-// This project utilizes the https://swapi.dev/ API and D3 and https://www.cdnfonts.com/death-star.font libraries
+// This project utilizes the https://swapi.py4e.com/ API and http://textillate.js.org/ and https://www.cdnfonts.com/death-star.font libraries
 
 var currentMode = "people";
 var number = 1;
@@ -28,13 +28,13 @@ function loadName(name_api) {
 
 function incNum(event) {
 	
-	if (number < 83 && currentMode == "people") {
+	if (number < 87 && currentMode == "people") {
 		number = number + 1;
 	}
-	else if (number < 60 && currentMode == "planets") {
+	else if (number < 61 && currentMode == "planets") {
 		number = number + 1;
 	}
-	else if (number < 6 && currentMode == "films") {
+	else if (number < 7 && currentMode == "films") {
 		number = number + 1;
 	}
 	else if (number < 37 && currentMode == "species") {
@@ -43,7 +43,7 @@ function incNum(event) {
 	else if (number < 39 && currentMode == "vehicles") {
 		number = number + 1;
 	}
-	else if (number < 36 && currentMode == "starfighters") {
+	else if (number < 37 && currentMode == "starfighters") {
 		number = number + 1;
 	}
 	buildPage();
@@ -57,17 +57,17 @@ function decNum(event) {
 }
 
 function buildPage() {
-	var api = "https://swapi.dev/api/"+currentMode+"/"+number+"/?format=json"
+	var api = "https://swapi.py4e.com/api/"+currentMode+"/"+number+"/?format=json"
 	if (currentMode == "people"){
-		max = 83;
+		max = 87;
 		buildPerson(api);
 	}
 	else if (currentMode == "planets"){
-		max = 60;
+		max = 61;
 		buildPlanet(api);
 	}
 	else if (currentMode == "films"){
-		max = 6;
+		max = 7;
 		buildFilm(api);
 	}
 	else if (currentMode == "species"){
@@ -79,7 +79,7 @@ function buildPage() {
 		buildVehicles(api);
 	}
 	else if (currentMode == "starfighters"){
-		max = 36;
+		max = 37;
 		buildStarfighter(api);
 	}
 }
@@ -90,6 +90,8 @@ select.addEventListener('change', function handleChange(event) {
 	currentMode = event.target.value;
 	number = 1;
 	buildPage();
+	// body = "<div data-preset='stripe' class='ldBar' data-value='"+number+"' data-max='"+max+"'></div>"
+	// document.getElementById("loading").innerHTML = body;
 });
 
 function buildPerson(api) {
@@ -129,6 +131,8 @@ function buildPerson(api) {
 				films = "";
 				body += "<h2>Films</h2><p><ul id='films'>"
 				for (var film of data.films) {
+					// film += "/?format=json"
+					//films += "<li>"+loadName(film)+"</li>";
 					body += "+" + film + "?format=json";
 				}
 				body += "</ul></p>"
@@ -137,6 +141,8 @@ function buildPerson(api) {
 				species = "";
 				body += "<h2>Species</h2><p><ul id='species'>";
 				for (var race of data.species) {
+					// race += "/?format=json"
+					// species += "<li>"+loadName(race)+"</li>";
 					body += "+" + race + "?format=json";
 				}
 				body += "</ul></p>"
@@ -146,6 +152,10 @@ function buildPerson(api) {
 				body += "<h2>Vehicles</h2><p><ul id='vehicles'>";
 				
 				for (const vehicle of data.vehicles) {
+					// v = loadName(vehicle);
+					// console.log("Next")
+					// console.log(loadName(vehicle))
+					// vehicles += "<li>"+v+"</li>";
 					body += "+" + vehicle + "?format=json";
 				}
 				body += "</p></ul>";
@@ -154,6 +164,7 @@ function buildPerson(api) {
 				starships = "";
 				body += "<h2>Starships</h2><p><ul>"
 				for (const ship of data.starships) {
+					// starships += "<li>"+loadName(ship)+"</li>";
 					body += "+" + ship + "?format=json";
 				}
 				body += "</p></ul>";
@@ -168,6 +179,15 @@ function buildPerson(api) {
 	catch (error) {
 		console.log(error);
 	}
+	fixPerson()
+}
+
+function fixPerson() {
+	let homeworld = document.querySelectorAll('homeworld').innerHTML;
+	console.log("homeworld")
+	console.log(homeworld)
+	let home = loadName(homeworld)
+	console.log(home)
 }
 
 function buildPlanet(api) {
